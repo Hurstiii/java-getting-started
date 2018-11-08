@@ -1,0 +1,5 @@
+language: Java
+
+before_build: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script: mvn test -B
